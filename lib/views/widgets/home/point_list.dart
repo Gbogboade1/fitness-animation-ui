@@ -10,8 +10,9 @@ class PointListWidget extends StatefulWidget {
 }
 
 class _PointListWidgetState extends State<PointListWidget> {
-  final _browseListKey = GlobalKey<AnimatedListState>();
   final int total = 6;
+  
+  final _browseListKey = GlobalKey<AnimatedListState>();
 
   _loadBrowseList() async {
     for (var i = 1; i < total; i++) {

@@ -15,9 +15,10 @@ class PopularList extends StatefulWidget {
 }
 
 class _PopularListState extends State<PopularList> {
+  int get total => widget.popularList.length;
+  
   final _popularListKey = GlobalKey<AnimatedListState>();
 
-  int get total => widget.popularList.length;
 
   _loadPopularList() async {
     for (var i = 1; i < total; i++) {
